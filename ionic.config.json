@@ -1,0 +1,7 @@
+{
+  "name": "MercadoLivre-OLX-Clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
