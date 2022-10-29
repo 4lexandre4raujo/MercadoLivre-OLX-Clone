@@ -1,0 +1,47 @@
+ion-content{
+    .gray{
+        background-color: rgb(226, 226, 226);
+        background-image: url('/assets/back.png');
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        ion-toolbar{
+            padding: 5px;
+            --background: yellow;
+            --ion-color-base: transparent !important;
+        }
+        ion-avatar{
+            background: grey;
+            height: 40px;
+            width: 50px;
+        }
+        ion-menu-button{
+            color: black;
+        }
+        .shopping-cart{
+            height: 30px;
+            width: 30px;
+        }
+        .form{
+            padding: 15px;
+        }
+        .borderOptCategoryTop{
+            margin-top: 10px;
+            height: 50px;
+            width: relative;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .category{
+
+            height: 50px;
+            width: relative; 
+        }
+        .borderOptCategoryBottom{
+
+            height: 50px;
+            width: relative;
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
+}

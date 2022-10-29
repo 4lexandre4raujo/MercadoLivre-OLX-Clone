@@ -1,9 +1,92 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.
+    <ion-icon>
+      <img src="/assets/home.png">
+      <label>Inicio</label>
+    </ion-icon>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
 <ion-content>
+  <div class="gray">
+    <ion-toolbar>
+      <ion-avatar slot="start">
+        
+      </ion-avatar>
+      <ion-searchbar placeholder="Estou buscando..."></ion-searchbar>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      
+        <img class="shopping-cart" slot="end" src="/assets/shopping-cart.png" />
+      
+    </ion-toolbar>
+    <div class="slides01">
+      <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide (click)="presentAlert()">
+          <img class="img-slides01" src="/assets/slide.png" />
+        </ion-slide>
 
+        <ion-slide (click)="presentAlert()">
+          <img class="img-slides01" src="/assets/slide.png" />
+        </ion-slide>
+
+        <ion-slide (click)="presentAlert()">
+          <img class="img-slides01" src="/assets/slide.png" />
+        </ion-slide>
+
+        <ion-slide (click)="presentAlert()">
+          <img class="img-slides01" src="/assets/slide.png" />
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <div class="form">
+      <div class="borderOptOfertasTop">
+        <ion-label>Ofertas do dia</ion-label>
+      </div>
+      <div class="ofertas">
+
+      </div>
+
+      <div class="ofertas">
+
+      </div>
+
+      <div class="ofertas">
+
+      </div>
+      <div class="borderOptOfertasBottom">
+        <ion-label [routerLink]="['/register']">Ver todas</ion-label>
+      </div>
+      <ion-label>
+        Categorias populares
+      </ion-label>
+      <ion-grid>
+        <div class="category">
+          <img class="icon-category" src="/assets/bear.png" />
+          <ion-label class="label-category">Brinquedos e hobbies</ion-label>
+        </div>
+        <div class="category">
+          <img class="icon-category" src="/assets/steering-wheel.png" />
+          <ion-label class="label-category">Acessórios para Veiculos</ion-label>
+        </div>
+        <div class="category">
+          <img class="icon-category" src="/assets/armchair.png" />
+          <ion-label class="label-category">Móvieis</ion-label>
+        </div>
+        <div class="category">
+          <img class="icon-category" src="/assets/console.png" />
+          <ion-label class="label-category">Games</ion-label>
+        </div> 
+      </ion-grid>
+      <ion-item class="borderOptCategoriasBottom">
+        <p [routerLink]="['/register']">Ver mais categorias</p>
+      </ion-item>
+    </div>
+  </div>
 </ion-content>

@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="white">
+    <ion-toolbar>
+      <ion-icon slot="start" [routerLink]="['/home']">
+        <img src='/assets/logo.png' />
+      </ion-icon>
+    </ion-toolbar>
+    <div class="logo">
+    </div>
+    <div class="form">
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+      <ion-button expand="block" class="b-login" (click)="entrar()">Entrar</ion-button>
+      <ion-button expand="block" class="b-register" color="warming" [routerLink]="['/register']">Criar conta</ion-button>
+      <div>
+        <p>
+        <ion-label>Esqueceu a senha?</ion-label>
+      </div>
+    </div>
+  </div>
 </ion-content>

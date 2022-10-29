@@ -1,0 +1,77 @@
+ion-content{
+    .white{
+        background-color: rgb(255, 255, 255);
+        background-image: url('/assets/back.png');
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        ion-toolbar{
+            padding: 5px;
+            --background: yellow;
+            --ion-color-base: transparent !important;
+        }
+        ion-avatar{
+            background: grey;
+            height: 40px;
+            width: 50px;
+        }
+        ion-menu-button{
+            color: black;
+        }
+        .shopping-cart{
+            height: 30px;
+            width: 30px;
+        }
+        .form{
+            padding: 10px;
+            ion-item{
+                color: white;
+                border-radius: 10px;
+            }
+            .formCadAnuncio{
+                background: rgb(255, 255, 255);
+                padding: 20px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: black;
+                height: relative;
+                .custom-textarea{
+                    text-emphasis-color: black;
+                    border-style: solid;
+                    border-color: black;
+                }
+            }
+            .category{
+
+                height: 50px;
+                width: relative; 
+            }
+            .fileAdd{
+                position: auto;
+                width: 189px;
+                height: 140px;
+                border-style: solid;
+                border-color: black;
+                border: 1px dashed #0057FF;
+                border-radius: 1px;
+            }
+            .b-enviarAnun{
+                height: 60px;
+            }
+            .image-container__box {
+                width: 160px;
+                height: 122px;
+                border-radius: 2px;
+                background-color: #fff;
+                border: 1px dashed #9027b0;
+                text-align: center;
+                float: left;
+                margin-right: 12px;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}

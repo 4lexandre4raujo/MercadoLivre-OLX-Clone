@@ -1,0 +1,114 @@
+ion-content{
+    .gray{
+        background-color: rgb(226, 226, 226);
+        background-image: url('/assets/back.png');
+        width: 100%;
+        height: relative;
+        position: relative;
+
+        ion-toolbar{
+            padding: 5px;
+            --background: yellow;
+            --ion-color-base: transparent !important;
+        }
+        ion-avatar{
+            background: grey;
+            height: 40px;
+            width: 50px;
+        }
+        ion-menu-button{
+            color: black;
+            .backdrop-no-scroll{
+                --background: white;
+            }
+        }
+        .shopping-cart{
+            height: 30px;
+            width: 30px;
+        }
+        .slides01 {
+            background-color: blue;
+            height: 180px;
+            .swiper-slide {
+                display: block;
+            }
+            .img-slides01{
+                height:200px;
+                width: 500px;
+            }
+        
+            .swiper-slide img {
+                max-width: 90%;
+                border-radius: 10px;
+                pointer-events: none;
+            }
+        }
+        .form{
+            padding: 20px;
+            .borderOptOfertasTop{
+                padding: 20px;
+                background: white;
+                height: 50px;
+                width: relative;
+                border-radius: 10px 10px 0px 0px;
+                margin-bottom: 2px;
+            }
+            .ofertas{
+                background: white;
+                margin-bottom: 2px;
+                height: 120px;
+                width: relative;
+            }
+            ion-item{
+                height: 50px;
+                color: black;
+                --background: white;
+            }
+            .borderOptOfertasBottom{
+                padding: 20px;
+                background: white;
+                margin-bottom: 2px;
+                height: 50px;
+                width: relative;
+                border-radius: 0px 0px 10px 10px;
+                margin-bottom: 20px;
+            }
+            p{
+                color: #0057FF;
+            }
+            ion-label{
+                color: black;
+            }
+            ion-grid{
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .category{
+                background: white;
+                height: 150px;
+                width: 150px;
+                display: grid;
+                border-radius: 10px;
+                margin: 3px;
+                .icon-category{
+                    height: 60px;
+                    width: 60px;
+                    margin: auto;
+                    display: block;
+                }
+                .label-category{
+                    font-size: 12px;
+                    color: #0067C7;
+                    margin: auto;
+                    display: block;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+            .borderOptCategoriasBottom{
+                border-radius: 5px;
+            }
+        }
+    }
+}

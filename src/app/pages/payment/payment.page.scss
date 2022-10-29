@@ -7,27 +7,20 @@ ion-content{
         position: relative;
 
         ion-toolbar{
+            padding: 5px;
             --background: yellow;
             --ion-color-base: transparent !important;
         }
-        ion-icon{
-            background-color: rgb(233, 233, 233);
-            border-radius: 50px;
-            width: 40px;
+        ion-avatar{
+            background: grey;
             height: 40px;
+            width: 50px;
+        }
+        ion-menu-button{
+            color: black;
         }
         .form{
-            padding: 20px;
+            padding-top: 5px;
         }
-        
-        .item{
-            margin-bottom: 20px;
-            border-radius: 10px;
-
-        }
-        .register{
-                color: #ffffff;
-                font-size: 16px;
-            }
     }
 }
