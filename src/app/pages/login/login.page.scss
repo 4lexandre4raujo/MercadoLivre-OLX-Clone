@@ -6,6 +6,17 @@ ion-content{
         height: 100%;
         position: relative;
 
+        ion-toolbar{
+            padding: 5px;
+            --background: yellow;
+            --ion-color-base: transparent !important;
+        }
+        ion-avatar{
+            background: grey;
+            height: 40px;
+            width: 50px;
+        }
+
         .form{
             padding: 20px;
         }
@@ -16,7 +27,7 @@ ion-content{
 
         }
         .logo{
-            background-image: url('/assets/logo.png');
+
             background-repeat: no-repeat;
             min-height: 300px;
             min-width: 100vw;

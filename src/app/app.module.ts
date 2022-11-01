@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 @NgModule({
   declarations: [AppComponent ],
@@ -21,7 +22,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
       messagingSenderId: "503269932924",
       appId: "1:503269932924:web:e9b6c47dd710c31f346ef9"
      }),
-     AngularFirestoreModule
+     AngularFirestoreModule,
+     AngularFireAuthModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

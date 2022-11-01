@@ -18,7 +18,51 @@
       </ion-buttons> 
     </ion-toolbar>
     <div class="form">
-      
+      <ion-label color="secondary">Anunciante: Fulano da Silva</ion-label>
+      <p>
+      <ion-label color="dark">Informações do produto</ion-label>
+      <p>
+      <ion-label color="dark">Publicado em 00/00 às 00:00 - cód. 00000000000000000000</ion-label>
+
+      <div class="formImgProduto">
+        <div class="slides01">
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide (click)="presentAlert()">
+              <img class="img-slides01" src="/assets/slide.png" />
+            </ion-slide>
+    
+            <ion-slide (click)="presentAlert()">
+              <img class="img-slides01" src="/assets/slide.png" />
+            </ion-slide>
+    
+            <ion-slide (click)="presentAlert()">
+              <img class="img-slides01" src="/assets/slide.png" />
+            </ion-slide>
+    
+            <ion-slide (click)="presentAlert()">
+              <img class="img-slides01" src="/assets/slide.png" />
+            </ion-slide>
+          </ion-slides>
+          
+        </div>
+        <ion-grid>
+          <img class="img-grid" src="/assets/slide.png" />
+          <img class="img-grid" src="/assets/slide.png" />
+          <img class="img-grid" src="/assets/slide.png" />
+          <img class="img-grid" src="/assets/slide.png" />
+        </ion-grid>
+        <ion-label color="dark">Preço: R$ 00,00</ion-label>
+        <p>
+        <ion-label color="dark">Em até 00x de R$ 00,00</ion-label>
+      </div>
+      <ion-button class="btnProdutoComprar">Comprar</ion-button>
+      <ion-button color="warning" class="btnProdutoCompartilhar">Compartilhar</ion-button>
+      <ion-button color="warning" class="btnProdutoFavoritar">Favoritar</ion-button>
+      <p>
+      <ion-label color="dark">Descrição do produto</ion-label>
+      <div class="descricao">
+        <ion-label></ion-label>
+      </div>
     </div>
   </div>
 </ion-content>

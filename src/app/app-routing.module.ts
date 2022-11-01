@@ -38,6 +38,18 @@ const routes: Routes = [
   {
     path: 'product',
     loadChildren: () => import('./pages/product/product.module').then( m => m.ProductPageModule)
+  },
+  {
+    path: 'item-category',
+    loadChildren: () => import('./pages/item-category/item-category.module').then( m => m.ItemCategoryPageModule)
+  },
+  {
+    path: 'announcement-list',
+    loadChildren: () => import('./pages/announcement-list/announcement-list.module').then( m => m.AnnouncementListPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   }
 ];
 
