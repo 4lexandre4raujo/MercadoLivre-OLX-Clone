@@ -26,8 +26,11 @@ ion-content{
         .form{
             padding: 10px;
             ion-item{
-                color: white;
+                
+                color: black;
                 border-radius: 10px;
+                border-color: black;
+                border-style: solid
             }
             .formCadAnuncio{
                 background: rgb(255, 255, 255);
@@ -42,8 +45,15 @@ ion-content{
                     border-color: black;
                 }
             }
+            .shadow{
+                
+            }
             .category{
-
+                padding: 4px;
+                box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+                border-radius: 0px;
+                border-style: none;
+                color: black;
                 height: 50px;
                 width: relative; 
             }

@@ -14,22 +14,13 @@ export class LoginPage implements OnInit {
   contador = 0;
   email: string = '';
   senha = '';
-  produtos : any;
   constructor(
     private router: Router,
     public firestore: AngularFirestore,
     private loadingCtrl: LoadingController,
     private toastController: ToastController,
     private fireAuth: AngularFireAuth
-  ) { 
-    console.log(router.url);
-    firestore.collection('produtos', ref => ref.limit(10).orderBy('valor', 'desc')).valueChanges().subscribe( x => {
-      this.produtos = x;
-      console.log(x);
-    });
-
-    console.log(this.produtos)
-  }
+  ) {}
 
   ngOnInit() {
   }

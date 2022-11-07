@@ -25,7 +25,8 @@
         <ion-label position="floating">Repita a Senha</ion-label>
         <ion-input type="password" [(ngModel)]="senhaRepetida"></ion-input>
       </ion-item>
-      
+      <ion-button [disabled]="!canSave()" expand="block" (click)="registrar()">Salvar</ion-button>
+      <ion-button color="warning" expand="block" routerLink="/login">Voltar</ion-button>
     </div>
 
   </div>

@@ -47,10 +47,6 @@ const routes: Routes = [
     path: 'announcement-list',
     loadChildren: () => import('./pages/announcement-list/announcement-list.module').then( m => m.AnnouncementListPageModule)
   },
-  {
-    path: 'menu',
-    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
-  }
 ];
 
 @NgModule({
