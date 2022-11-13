@@ -26,22 +26,11 @@ ion-content{
         .form{
             padding: 15px;
         }
-        .borderOptCategoryTop{
-            margin-top: 10px;
-            height: 50px;
-            width: relative;
-            border-radius: 10px 10px 0px 0px;
-        }
-        .category{
-
-            height: 50px;
-            width: relative; 
-        }
-        .borderOptCategoryBottom{
+        
+        .borderOptCategory{
 
             height: 50px;
             width: relative;
-            border-radius: 0px 0px 10px 10px;
         }
     }
 }

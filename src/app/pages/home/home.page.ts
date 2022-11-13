@@ -1,5 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,8 +17,15 @@ export class HomePage implements OnInit {
     slidesPerView: 1,
     autoplay: true
   };
-  constructor() { }
-
+  produtos: any;
+  constructor(
+    private router: Router,
+    public firestore: AngularFirestore,
+    private fireAuth: AngularFireAuth
+  ) {
+    this.produtos = firestore.collection('produtos', ref => ref.limit(4)).valueChanges();
+  }
+    
   ngOnInit() {
   }
 

@@ -35,30 +35,11 @@
       <div class="borderOptOfertasTop">
         <ion-label>Ofertas do dia</ion-label>
       </div>
-      <div class="ofertas">
-        <img src="/assets/produto.png">
+      <div class="ofertas" *ngFor="let produto of produtos | async">
+        <img referrerpolicy="no-referrer" [src]="produto.link">
         <div class="infoProduto">
-          <ion-label>Samsung Galaxy A03 Dual SIM
-            64 GB azul 4 GB RAM</ion-label>
-          <h3>R$ 500</h3>
-        </div>
-      </div>
-
-      <div class="ofertas">
-        <img src="/assets/produto.png">
-        <div class="infoProduto">
-          <ion-label>Samsung Galaxy A03 Dual SIM
-            64 GB azul 4 GB RAM</ion-label>
-          <h3>R$ 500</h3>
-        </div>
-      </div>
-
-      <div class="ofertas">
-        <img src="/assets/produto.png">
-        <div class="infoProduto">
-          <ion-label>Samsung Galaxy A03 Dual SIM
-            64 GB azul 4 GB RAM</ion-label>
-          <h3>R$ 500</h3>
+          <ion-label>{{produto.titulo}} {{produto.descricao}}</ion-label>
+          <h3>R$ {{produto.preco}}</h3>
         </div>
       </div>
       <div class="borderOptOfertasBottom">
