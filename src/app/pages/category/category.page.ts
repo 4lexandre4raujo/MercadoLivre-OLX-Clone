@@ -9,6 +9,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 })
 export class CategoryPage implements OnInit {
   categorias : any;
+  usuarios: any;
   constructor(
     private router: Router,
     firestore: AngularFirestore

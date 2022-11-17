@@ -9,6 +9,8 @@
       </ion-buttons> 
     </ion-toolbar>
     <div class="form" *ngFor="let produto of produtos | async">
+      <ion-label color="secondary">Anunciante: {{produto.user}}</ion-label>
+      <p>
       <ion-label>{{produto.titulo}}</ion-label>
       <p>
       <ion-label>Publicado em 00/00 às 00:00</ion-label>
@@ -24,14 +26,14 @@
         </div>
         <p>
         <ion-label color="dark">Preço: R$ {{produto.preco}}</ion-label>
-        <p>
       </div>
+      <ion-button class="btnProdutoComprar" [routerLink]="['/confirmation-payment']">Comprar</ion-button>
+      <ion-button color="warning" class="btnProdutoCompartilhar">Compartilhar</ion-button>
+      <ion-button color="warning" class="btnProdutoFavoritar">Favoritar</ion-button>
       <p>
       <ion-label color="dark">Descrição do produto</ion-label>
       <P>
-      <textarea disabled="disabled">{{produto.descricao}}</textarea>
-      <ion-button class="btnProdutoEdit" color="danger">Excluir</ion-button>
-      <ion-button class="btnProdutoEdit">Editar</ion-button>
+        <textarea disabled="disabled">{{produto.descricao}}</textarea>
     </div>
   </div>
 </ion-content>

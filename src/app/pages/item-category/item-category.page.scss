@@ -1,7 +1,6 @@
 ion-content{
-    .gray{
-        background-color: rgb(226, 226, 226);
-        background-image: url('/assets/back.png');
+    .white{
+        background-color: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
         position: relative;
@@ -10,9 +9,6 @@ ion-content{
             padding: 5px;
             --background: yellow;
             --ion-color-base: transparent !important;
-        }
-        button-text{
-            size: 20px;
         }
         ion-avatar{
             background: grey;
@@ -27,7 +23,33 @@ ion-content{
             width: 30px;
         }
         .form{
-            padding-top: 5px;
+            padding: 15px;
+            
+            .anunciar{
+                padding: 10px;
+                margin-bottom: 2px;
+                height: 100px;
+                text-align: center;
+                height: 80px;
+                width: 320px;
+            }
         }
-    }
+        .ofertas{
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background: rgb(255, 255, 255);
+            margin-bottom: 2px;
+            height: 120px;
+            width: relative;
+            .infoProduto{
+                width: 190px;
+                float: right;
+                font-size: 13px;
+            }
+            img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }   
 }

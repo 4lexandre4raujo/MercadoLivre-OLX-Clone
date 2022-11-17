@@ -1,15 +1,21 @@
 <ion-content>
-  <div class="gray">
+  <div class="white">
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-back-button text="Nome categoria" defaultHref="home"></ion-back-button>
+        <ion-back-button color="dark" text="Nome Categoria" defaultHref="home"></ion-back-button>
       </ion-buttons>
       <ion-buttons slot="end">
         <ion-menu-button></ion-menu-button>
       </ion-buttons> 
     </ion-toolbar>
     <div class="form">
-      
+      <div class="ofertas" *ngFor="let produto of produtos | async" [routerLink]="['/product']">
+        <img referrerpolicy="no-referrer" [src]="produto.link">
+        <div class="infoProduto">
+          <ion-label>{{produto.titulo}}</ion-label>
+          <h3>R$ {{produto.preco}}</h3>
+        </div>
+      </div>
     </div>
   </div>
 </ion-content>

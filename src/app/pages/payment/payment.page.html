@@ -9,7 +9,47 @@
       </ion-buttons> 
     </ion-toolbar>
     <div class="form">
-      
+      <ion-label>Seus Cartões</ion-label>
+      <p>
+      <div class="formCartoes">
+
+      </div>
+      <p>
+      <ion-label>Adicionar novo cartão de crédito</ion-label>
+      <p>
+      <div class="formAddCartoes">
+        <ion-label color="dark" position="floating">Número do cartão:</ion-label>
+        <p>
+        <ion-item>
+          <ion-input #numeroCar type="number"></ion-input>
+        </ion-item>
+        <div class="valCvv">
+          <p>
+          <ion-label color="dark" position="floating">Validade:</ion-label>
+          <p>
+          <ion-item>
+            <ion-input #validade></ion-input>
+          </ion-item>
+          <p>
+          <ion-label color="dark" position="floating">CVV:</ion-label>
+          <p>
+          <ion-item>
+            <ion-input #cvv type="number"></ion-input>
+          </ion-item>
+        </div>
+        <p>
+        <ion-label color="dark" position="floating">Nome Impresso no Cartão:</ion-label>
+        <p>
+        <ion-item>
+          <ion-input #nomeCar></ion-input>
+        </ion-item>
+        <p>
+        <ion-label color="dark" position="floating">CPF/CNPJ do Titular:</ion-label>
+        <p>
+        <ion-item>
+          <ion-input #cpf type="number"></ion-input>
+        </ion-item>
+      </div>
     </div>
   </div>
 </ion-content>

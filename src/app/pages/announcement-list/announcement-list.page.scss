@@ -1,7 +1,6 @@
 ion-content{
     .white{
         background-color: rgb(255, 255, 255);
-        background-image: url('/assets/back.png');
         width: 100%;
         height: 100%;
         position: relative;
@@ -19,22 +18,36 @@ ion-content{
         ion-menu-button{
             color: black;
         }
-        .shopping-cart{
-            height: 30px;
-            width: 30px;
+        h1{
+            text-align: center;
         }
         .form{
             padding: 15px;
-            text-align: center;
-                .anunciar{
-                    padding: 10px;
-                    margin-bottom: 2px;
-                    height: 100px;
-                    text-align: center;
-                    height: 80px;
-                    width: 320px;
-                
+            .anunciar{
+                padding: 10px;
+                margin-bottom: 2px;
+                height: 100px;
+                text-align: center;
+                height: 80px;
+                width: 320px;
             }
         }
-    }
+        .ofertas{
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background: rgb(255, 255, 255);
+            margin-bottom: 2px;
+            height: 120px;
+            width: relative;
+            .infoProduto{
+                width: 190px;
+                float: right;
+                font-size: 13px;
+            }
+            img{
+                height: 80px;
+                width: 70px;
+            }
+        }
+    }   
 }

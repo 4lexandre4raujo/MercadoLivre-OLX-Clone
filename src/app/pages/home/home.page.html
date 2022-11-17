@@ -2,7 +2,7 @@
   <div class="gray">
     <ion-toolbar>
       <ion-avatar slot="start">
-        
+        <img  src="/assets/logoIcon1.png" />
       </ion-avatar>
       <ion-searchbar placeholder="Estou buscando..."></ion-searchbar>
       <ion-buttons slot="end">
@@ -35,10 +35,10 @@
       <div class="borderOptOfertasTop">
         <ion-label>Ofertas do dia</ion-label>
       </div>
-      <div class="ofertas" *ngFor="let produto of produtos | async">
+      <div class="ofertas" *ngFor="let produto of produtos | async" [routerLink]="['/product-sale']">
         <img referrerpolicy="no-referrer" [src]="produto.link">
         <div class="infoProduto">
-          <ion-label>{{produto.titulo}} {{produto.descricao}}</ion-label>
+          <ion-label>{{produto.titulo}}</ion-label>
           <h3>R$ {{produto.preco}}</h3>
         </div>
       </div>
@@ -49,19 +49,19 @@
         Categorias populares
       </ion-label>
       <ion-grid>
-        <div class="category">
+        <div class="category" [routerLink]="['/item-category']">
           <img class="icon-category" src="/assets/bear.png" />
           <ion-label class="label-category">Brinquedos e hobbies</ion-label>
         </div>
-        <div class="category">
+        <div class="category" [routerLink]="['/item-category']">
           <img class="icon-category" src="/assets/steering-wheel.png" />
           <ion-label class="label-category">Acessórios para Veiculos</ion-label>
         </div>
-        <div class="category">
+        <div class="category" [routerLink]="['/item-category']">
           <img class="icon-category" src="/assets/armchair.png" />
           <ion-label class="label-category">Móvieis</ion-label>
         </div>
-        <div class="category">
+        <div class="category" [routerLink]="['/item-category']">
           <img class="icon-category" src="/assets/console.png" />
           <ion-label class="label-category">Games</ion-label>
         </div> 

@@ -47,6 +47,18 @@ const routes: Routes = [
     path: 'announcement-list',
     loadChildren: () => import('./pages/announcement-list/announcement-list.module').then( m => m.AnnouncementListPageModule)
   },
+  {
+    path: 'product-sale',
+    loadChildren: () => import('./pages/product-sale/product-sale.module').then( m => m.ProductSalePageModule)
+  },
+  {
+    path: 'deals-day',
+    loadChildren: () => import('./pages/deals-day/deals-day.module').then( m => m.DealsDayPageModule)
+  },
+  {
+    path: 'confirmation-payment',
+    loadChildren: () => import('./pages/confirmation-payment/confirmation-payment.module').then( m => m.ConfirmationPaymentPageModule)
+  },
 ];
 
 @NgModule({
